@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragon CRM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="logo">
+                <h1>Paragon CRM</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#dashboard" class="active">Dashboard</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#interactions">Interactions</a></li>
+                    <li><a href="#tasks">Tasks</a></li>
+                    <li><a href="#pipeline">Pipeline</a></li>
+                    <li><a href="#referrals">Referrals</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </nav>
+            <div class="user-menu">
+                <span class="user-name">User</span>
+                <img src="user-avatar.png" alt="User Avatar" class="avatar">
+            </div>
+        </header>
+        
+        <main>
+            <section id="dashboard" class="active-section">
+                <h2>Dashboard</h2>
+                <div class="dashboard-grid">
+                    <div class="card">
+                        <h3>Recent Contacts</h3>
+                        <ul class="contact-list">
+                            <li>
+                                <img src="avatar1.png" alt="Contact Avatar" class="avatar-small">
+                                <div class="contact-info">
+                                    <span class="contact-name">John Smith</span>
+                                    <span class="contact-company">Acme Inc.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="avatar2.png" alt="Contact Avatar" class="avatar-small">
+                                <div class="contact-info">
+                                    <span class="contact-name">Sarah Johnson</span>
+                                    <span class="contact-company">XYZ Corp</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="avatar3.png" alt="Contact Avatar" class="avatar-small">
+                                <div class="contact-info">
+                                    <span class="contact-name">Michael Brown</span>
+                                    <span class="contact-company">123 Industries</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#contacts" class="view-all">View All Contacts</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Upcoming Tasks</h3>
+                        <ul class="task-list">
+                            <li>
+                                <div class="task-info">
+                                    <span class="task-title">Follow up with John</span>
+                                    <span class="task-date">Today, 2:00 PM</span>
+                                </div>
+                                <span class="task-priority high">High</span>
+                            </li>
+                            <li>
+                                <div class="task-info">
+                                    <span class="task-title">Send proposal to Sarah</span>
+                                    <span class="task-date">Tomorrow, 10:00 AM</span>
+                                </div>
+                                <span class="task-priority medium">Medium</span>
+                            </li>
+                            <li>
+                                <div class="task-info">
+                                    <span class="task-title">Call Michael</span>
+                                    <span class="task-date">May 17, 3:30 PM</span>
+                                </div>
+                                <span class="task-priority low">Low</span>
+                            </li>
+                        </ul>
+                        <a href="#tasks" class="view-all">View All Tasks</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Pipeline Overview</h3>
+                        <div class="pipeline-chart">
+                            <div class="pipeline-stage">
+                                <div class="pipeline-label">Lead</div>
+                                <div class="pipeline-bar" style="height: 60px;"></div>
+                                <div class="pipeline-value">12</div>
+                            </div>
+                            <div class="pipeline-stage">
+                                <div class="pipeline-label">Qualified</div>
+                                <div class="pipeline-bar" style="height: 90px;"></div>
+                                <div class="pipeline-value">18</div>
+                            </div>
+                            <div class="pipeline-stage">
+                                <div class="pipeline-label">Proposal</div>
+                                <div class="pipeline-bar" style="height: 45px;"></div>
+                                <div class="pipeline-value">9</div>
+                            </div>
+                            <div class="pipeline-stage">
+                                <div class="pipeline-label">Negotiation</div>
+                                <div class="pipeline-bar" style="height: 30px;"></div>
+                                <div class="pipeline-value">6</div>
+                            </div>
+                            <div class="pipeline-stage">
+                                <div class="pipeline-label">Closed</div>
+                                <div class="pipeline-bar" style="height: 20px;"></div>
+                                <div class="pipeline-value">4</div>
+                            </div>
+                        </div>
+                        <a href="#pipeline" class="view-all">View Pipeline</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Recent Interactions</h3>
+                        <ul class="interaction-list">
+                            <li>
+                                <div class="interaction-info">
+                                    <span class="interaction-type email">Email</span>
+                                    <span class="interaction-contact">John Smith</span>
+                                    <span class="interaction-summary">Discussed proposal details</span>
+                                </div>
+                                <span class="interaction-time">2 hours ago</span>
+                            </li>
+                            <li>
+                                <div class="interaction-info">
+                                    <span class="interaction-type call">Call</span>
+                                    <span class="interaction-contact">Sarah Johnson</span>
+                                    <span class="interaction-summary">Initial discovery call</span>
+                                </div>
+                                <span class="interaction-time">Yesterday</span>
+                            </li>
+                            <li>
+                                <div class="interaction-info">
+                                    <span class="interaction-type meeting">Meeting</span>
+                                    <span class="interaction-contact">Michael Brown</span>
+                                    <span class="interaction-summary">Product demo</span>
+                                </div>
+                                <span class="interaction-time">2 days ago</span>
+                            </li>
+                        </ul>
+                        <a href="#interactions" class="view-all">View All Interactions</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contacts">
+                <h2>Contacts</h2>
+                <p>This section will display your contacts.</p>
+                <div class="placeholder-message">
+                    <p>Your contacts will appear here once connected to the backend.</p>
+                    <p>Backend URL: https://paragon-crm-api.herokuapp.com/</p>
+                </div>
+            </section>
+            
+            <section id="interactions">
+                <h2>Interactions</h2>
+                <p>This section will display your interaction logs.</p>
+                <div class="placeholder-message">
+                    <p>Your interaction logs will appear here once connected to the backend.</p>
+                    <p>Backend URL: https://paragon-crm-api.herokuapp.com/</p>
+                </div>
+            </section>
+            
+            <section id="tasks">
+                <h2>Tasks</h2>
+                <p>This section will display your tasks and reminders.</p>
+                <div class="placeholder-message">
+                    <p>Your tasks and reminders will appear here once connected to the backend.</p>
+                    <p>Backend URL: https://paragon-crm-api.herokuapp.com/</p>
+                </div>
+            </section>
+            
+            <section id="pipeline">
+                <h2>Pipeline</h2>
+                <p>This section will display your sales pipeline.</p>
+                <div class="placeholder-message">
+                    <p>Your pipeline data will appear here once connected to the backend.</p>
+                    <p>Backend URL: https://paragon-crm-api.herokuapp.com/</p>
+                </div>
+            </section>
+            
+            <section id="referrals">
+                <h2>Referrals</h2>
+                <p>This section will display your referral tracking.</p>
+                <div class="placeholder-message">
+                    <p>Your referral data will appear here once connected to the backend.</p>
+                    <p>Backend URL: https://paragon-crm-api.herokuapp.com/</p>
+                </div>
+            </section>
+            
+            <section id="settings">
+                <h2>Settings</h2>
+                <div class="settings-container">
+                    <div class="settings-sidebar">
+                        <ul>
+                            <li class="active"><a href="#general-settings">General</a></li>
+                            <li><a href="#outlook-settings">Microsoft Outlook</a></li>
+                            <li><a href="#whatsapp-settings">WhatsApp</a></li>
+                            <li><a href="#wechat-settings">WeChat</a></li>
+                            <li><a href="#user-settings">User Profile</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="settings-content">
+                        <div id="general-settings" class="settings-panel active">
+                            <h3>General Settings</h3>
+                            <form>
+                                <div class="form-group">
+                                    <label for="company-name">Company Name</label>
+                                    <input type="text" id="company-name" value="Your Company">
+                                </div>
+                                <div class="form-group">
+                                    <label for="timezone">Timezone</label>
+                                    <select id="timezone">
+                                        <option>UTC (GMT+0:00)</option>
+                                        <option selected>Eastern Time (GMT-5:00)</option>
+                                        <option>Pacific Time (GMT-8:00)</option>
+                                        <option>Central European Time (GMT+1:00)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date-format">Date Format</label>
+                                    <select id="date-format">
+                                        <option selected>MM/DD/YYYY</option>
+                                        <option>DD/MM/YYYY</option>
+                                        <option>YYYY-MM-DD</option>
+                                    </select>
+                                </div>
+                                <button type="button" class="btn primary">Save Changes</button>
+                            </form>
+                        </div>
+                        
+                        <div id="outlook-settings" class="settings-panel">
+                            <h3>Microsoft Outlook Integration</h3>
+                            <div class="connection-status connected">
+                                <span class="status-indicator"></span>
+                                <span class="status-text">Connected</span>
+                            </div>
+                            <form>
+                                <div class="form-group">
+                                    <label for="outlook-client-id">Client ID</label>
+                                    <input type="text" id="outlook-client-id" value="********">
+                                </div>
+                                <div class="form-group">
+                                    <label for="outlook-tenant-id">Tenant ID</label>
+                                    <input type="text" id="outlook-tenant-id" value="********">
+                                </div>
+                                <div class="form-group">
+                                    <label for="outlook-client-secret">Client Secret</label>
+                                    <input type="password" id="outlook-client-secret" value="********">
+                                </div>
+                                <button type="button" class="btn primary">Update Credentials</button>
+                                <button type="button" class="btn secondary">Disconnect</button>
+                            </form>
+                        </div>
+                        
+                        <div id="whatsapp-settings" class="settings-panel">
+                            <h3>WhatsApp Integration</h3>
+                            <div class="connection-status not-connected">
+                                <span class="status-indicator"></span>
+                                <span class="status-text">Not Connected</span>
+                            </div>
+                            <form>
+                                <div class="form-group">
+                                    <label for="whatsapp-phone-id">Phone Number ID</label>
+                                    <input type="text" id="whatsapp-phone-id" placeholder="Enter your Phone Number ID">
+                                </div>
+                                <div class="form-group">
+                                    <label for="whatsapp-business-id">WhatsApp Business Account ID</label>
+                                    <input type="text" id="whatsapp-business-id" placeholder="Enter your WABA ID">
+                                </div>
+                                <div class="form-group">
+                                    <label for="whatsapp-access-token">Access Token</label>
+                                    <input type="password" id="whatsapp-access-token" placeholder="Enter your System User Access Token">
+                                </div>
+                                <div class="form-group">
+                                    <label for="whatsapp-verify-token">Webhook Verify Token</label>
+                                    <input type="text" id="whatsapp-verify-token" placeholder="Enter your Webhook Verify Token">
+                                </div>
+                                <button type="button" class="btn primary">Connect WhatsApp</button>
+                            </form>
+                        </div>
+                        
+                        <div id="wechat-settings" class="settings-panel">
+                            <h3>WeChat Integration</h3>
+                            <div class="connection-status not-connected">
+                                <span class="status-indicator"></span>
+                                <span class="status-text">Not Connected</span>
+                            </div>
+                            <div class="coming-soon">
+                                <p>WeChat integration is coming soon!</p>
+                            </div>
+                        </div>
+                        
+                        <div id="user-settings" class="settings-panel">
+                            <h3>User Profile</h3>
+                            <form>
+                                <div class="form-group">
+                                    <label for="user-name">Name</label>
+                                    <input type="text" id="user-name" value="User">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-email">Email</label>
+                                    <input type="email" id="user-email" value="user@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-password">Password</label>
+                                    <input type="password" id="user-password" value="********">
+                                </div>
+                                <button type="button" class="btn primary">Update Profile</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Paragon CRM. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
